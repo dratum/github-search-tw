@@ -19,11 +19,11 @@ export const RepoCard = observer(({ data }: { data: RepositoryType }) => {
           alt='logo-author'
         />
         <span>
-          <img src='/src/assets/star.svg' alt='star-icon' />
+          <img src='/star.svg' alt='star-icon' />
           {data.stargazers_count}
         </span>
         <span>
-          <img src='/src/assets/gitbranch.svg' alt='fork-logo' />
+          <img src='/gitbranch.svg' alt='fork-logo' />
           {data.forks}
         </span>
       </div>
@@ -59,7 +59,7 @@ export const RepoCard = observer(({ data }: { data: RepositoryType }) => {
             <span>Copied</span>
           ) : (
             <button className={styles.linkButton} aria-label='Link'>
-              <img src='/src/assets/link.svg' alt='' aria-hidden='true' />
+              <img src='/link.svg' alt='' aria-hidden='true' />
             </button>
           )}
         </CopyToClipboard>

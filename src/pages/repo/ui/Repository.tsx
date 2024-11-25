@@ -26,7 +26,7 @@ export const RepositoryPage = observer(() => {
     repository && (
       <>
         <NavLink className={styles.navLink} to={"/"}>
-          <img src='/src/assets/Union.svg' alt='' />
+          <img src='/Union.svg' alt='' />
           <span className={styles.back}>Back</span>
         </NavLink>
         <div className={styles.repoPage}>
@@ -45,42 +45,42 @@ export const RepositoryPage = observer(() => {
           </div>
           <div className={styles.metaDataBlock}>
             <div>
-              <img src='/src/assets/star.svg' alt='icon' />
+              <img src='/star.svg' alt='icon' />
               <div className={styles.textMetaData}>
                 <span>{repository.stargazers_count}</span>
                 <span>Количество звезд</span>
               </div>
             </div>
             <div>
-              <img src='/src/assets/gitbranch.svg' alt='icon' />
+              <img src='/gitbranch.svg' alt='icon' />
               <div className={styles.textMetaData}>
                 <span>{repository.forks}</span>
                 <span>Количество форков</span>
               </div>
             </div>
             <div>
-              <img src='/src/assets/archive 1.svg' alt='icon' />
+              <img src='/archive 1.svg' alt='icon' />
               <div className={styles.textMetaData}>
                 <span>{repository.archived ? "Да" : "Нет"} </span>
                 <span>в архиве</span>
               </div>
             </div>
             <div>
-              <img src='/src/assets/Vector (8).svg' alt='icon' />
+              <img src='/Vector (8).svg' alt='icon' />
               <div className={styles.textMetaData}>
                 <span>{repository.language || "-"}</span>
                 <span>Язык</span>
               </div>
             </div>
             <div>
-              <img src='/src/assets/create.svg' alt='icon' />
+              <img src='/create.svg' alt='icon' />
               <div className={styles.textMetaData}>
                 <span>{formatDate(repository.created_at || "-")}</span>
                 <span>Создано</span>
               </div>
             </div>
             <div>
-              <img src='/src/assets/create_1.svg' alt='icon' />
+              <img src='/create_1.svg' alt='icon' />
               <div className={styles.textMetaData}>
                 <span>{formatDate(repository.updated_at || "-")}</span>
                 <span>Изменено</span>
@@ -89,7 +89,7 @@ export const RepositoryPage = observer(() => {
           </div>
           <div className={styles.buttons}>
             <button className={styles.linkButton} aria-label='Link'>
-              <img src='/src/assets/link.svg' alt='' aria-hidden='true' />
+              <img src='/link.svg' alt='' aria-hidden='true' />
             </button>
             <button
               className={styles.likeButton}

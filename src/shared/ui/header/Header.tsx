@@ -37,7 +37,7 @@ export const Header = () => {
         </NavLink>
         <img
           className={styles.profilePage}
-          src='./src/assets/account.svg'
+          src='/account.svg'
           width={"20px"}
           alt='profile'
           onClick={handleLastRouteClick}

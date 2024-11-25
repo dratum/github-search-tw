@@ -8,7 +8,7 @@ export const FavoritesPage = observer(() => {
   return (
     <main>
       <NavLink to={"/"}>
-        <img src='/src/assets/Union.svg' alt='' />
+        <img src='/Union.svg' alt='' />
         <span className={styles.back}>Back</span>
       </NavLink>
       <div className={styles.headers}>
