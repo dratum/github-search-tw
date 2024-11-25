@@ -25,7 +25,7 @@ export const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles.logo}>
-        <img src='/src/assets/search_new.svg' width={"24px"} alt='logo' />{" "}
+        <img src='./src/assets/search_new.svg' width={"24px"} alt='logo' />{" "}
         <NavLink to='/'>
           <span>GitHubSearch</span>
         </NavLink>
@@ -33,11 +33,11 @@ export const Header = () => {
       <div className={styles.buttons}>
         <NavLink to='/favorites'>
           <Counter />
-          <img src='/src/assets/Vector.svg' width={"14px"} alt='fav-repo' />
+          <img src='./src/assets/Vector.svg' width={"14px"} alt='fav-repo' />
         </NavLink>
         <img
           className={styles.profilePage}
-          src='/src/assets/account.svg'
+          src='./src/assets/account.svg'
           width={"20px"}
           alt='profile'
           onClick={handleLastRouteClick}
