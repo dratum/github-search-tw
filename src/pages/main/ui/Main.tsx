@@ -12,10 +12,10 @@ export const MainPage = observer(() => {
         <DropDown target={"repositories"} />
       </div>
       <div className={styles.container}>
-        {repositoriesStore.repositories &&
-          repositoriesStore.repositories.map((repo) => {
-            return <RepoCard key={repo.id} data={repo} />;
-          })}
+        {repositoriesStore.repositories.length > 0 &&
+          repositoriesStore.repositories.map((repo) => (
+            <RepoCard key={repo.id} data={repo} />
+          ))}
       </div>
     </main>
   );

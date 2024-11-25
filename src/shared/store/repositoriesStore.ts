@@ -20,7 +20,7 @@ class Repositories {
     makeAutoObservable(this);
     this.getSearchRepositories = throttle(
       this.getSearchRepositories.bind(this),
-      500
+      1000
     );
   }
 
@@ -36,11 +36,15 @@ class Repositories {
         `https://api.github.com/search/repositories?q=${query}&per_page=12`
       );
       const data = await response.json();
+
       runInAction(() => {
         this.repositories = data.items || [];
       });
     } catch (error) {
       console.error("Failed to fetch repositories", error);
+      runInAction(() => {
+        this.repositories = [];
+      });
     }
   }
   //

@@ -6,6 +6,7 @@ import repositoriesStore, {
 import { NavLink, useParams } from "react-router-dom";
 import { formatDate } from "../../../shared/helpers/formattedData";
 import { useRepoActions } from "../../../shared/hooks/useRepoActions";
+import CopyToClipboard from "react-copy-to-clipboard";
 
 type ExtendRepositoryType = RepositoryType &
   Partial<{
@@ -20,7 +21,9 @@ export const RepositoryPage = observer(() => {
   const { id } = useParams();
   const repository: ExtendRepositoryType | undefined =
     repositoriesStore.repositories.find((repo) => repo.id === Number(id));
-  const { isLiked, handleLikeRepo } = useRepoActions(Number(id));
+  const { isLiked, handleLikeRepo, handleCopy, copied } = useRepoActions(
+    Number(id)
+  );
 
   return (
     repository && (
@@ -88,9 +91,18 @@ export const RepositoryPage = observer(() => {
             </div>
           </div>
           <div className={styles.buttons}>
-            <button className={styles.linkButton} aria-label='Link'>
-              <img src='/link.svg' alt='' aria-hidden='true' />
-            </button>
+            <CopyToClipboard
+              text={`${repository.html_url}`}
+              onCopy={handleCopy}
+            >
+              {copied ? (
+                <span>Copied</span>
+              ) : (
+                <button className={styles.linkButton} aria-label='Link'>
+                  <img src='/link.svg' alt='' aria-hidden='true' />
+                </button>
+              )}
+            </CopyToClipboard>
             <button
               className={styles.likeButton}
               aria-label='Like'
