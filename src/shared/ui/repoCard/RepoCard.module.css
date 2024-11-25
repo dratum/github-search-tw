@@ -1,0 +1,104 @@
+.card {
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	width: 282px;
+	height: 180px;
+	border-radius: 20px;
+	padding: 24px;
+	gap: 16px;
+}
+.avatar {
+	border-radius: 50px;
+	margin-right: auto;
+}
+
+.info {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 8px;
+}
+
+.info span {
+	height: 24px;
+	font-family: sans-serif;
+	background-color: rgba(241, 245, 249, 1);
+	border-radius: 12px;
+	padding: 4px 8px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 10px;
+	font-weight: 400;
+	line-height: 14px;
+	gap: 4px;
+	margin-left: 8px;
+}
+
+.author {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	gap: 8px;
+}
+.author span {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 100%;
+}
+.authorFont {
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 18.4px;
+}
+.author > a {
+	color: rgba(30, 137, 240, 1);
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 14px;
+}
+
+.repoName {
+	color: rgba(30, 137, 240, 1);
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 14px;
+}
+
+.buttons {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 8px;
+}
+
+button {
+	all: unset;
+	cursor: pointer;
+	border-radius: 8px;
+	border: 1px solid rgba(58, 58, 58, 0.12);
+}
+
+.likeButton,
+.linkButton {
+	margin-right: 8px;
+	width: 32px;
+	height: 32px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.description {
+	background-color: rgba(212, 67, 51, 1);
+	padding: 8px 16px;
+	border-radius: 8px;
+	color: white;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 16px;
+	letter-spacing: 0.5px;
+	margin-left: auto;
+}

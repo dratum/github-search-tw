@@ -1,0 +1,16 @@
+.counter {
+	width: 15px;
+	height: 15px;
+	padding: 2px 4px;
+	background-color: rgba(212, 67, 51, 1);
+	z-index: 3;
+	border-radius: 4px;
+	color: white;
+	font-size: 9px;
+	font-weight: 600;
+	line-height: 10.8px;
+	text-underline-position: from-font;
+	position: absolute;
+	bottom: 12px;
+	left: 10px;
+}

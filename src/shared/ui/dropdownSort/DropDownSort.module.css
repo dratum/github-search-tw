@@ -1,0 +1,19 @@
+select {
+	width: 286px;
+	height: 48px;
+	border-radius: 12px;
+	border: none;
+	padding: 12px 20px 12px 20px;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 16px;
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	background: #fff url("./../../../assets/down.svg") no-repeat;
+	background-position: calc(100% - 20px) center;
+}
+
+select:focus {
+	outline: 1px solid rgba(58, 58, 58, 1);
+}

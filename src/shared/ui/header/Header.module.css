@@ -1,0 +1,33 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: rgba(58, 58, 58, 1);
+	padding: 0 278px 0 279px;
+	height: 72px;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	color: white;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 18.2px;
+	font-family: Noto Sans;
+}
+
+a {
+	position: relative;
+	text-decoration: none;
+	color: inherit;
+}
+.buttons {
+	display: flex;
+	gap: 32px;
+}
+
+.profilePage {
+	cursor: pointer;
+}
