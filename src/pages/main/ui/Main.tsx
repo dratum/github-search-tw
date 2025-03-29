@@ -1,7 +1,7 @@
 import styles from "./Main.module.css";
 import { observer } from "mobx-react-lite";
-import { Search, RepoCard, DropDown } from "../../../shared/ui/index";
-import repositoriesStore from "../../../shared/store/repositoriesStore";
+import { Search, RepoCard, DropDown } from "@shared/ui/index";
+import repositoriesStore from "@shared/store/repositoriesStore";
 
 export const MainPage = observer(() => {
   return (

@@ -1,8 +1,8 @@
 import "./App.css";
-import { Header } from "../shared/ui/header/Header.tsx";
-import { MainPage } from "../pages/main/index.ts";
-import { FavoritesPage } from "../pages/favorite/index.ts";
-import { RepositoryPage } from "../pages/repo/index.ts";
+import { Header } from "@shared/ui/header/Header";
+import { MainPage } from "@pages/main";
+import { FavoritesPage } from "@pages/favorite";
+import { RepositoryPage } from "@pages/repo";
 import { Route, Routes } from "react-router-dom";
 
 function App() {
