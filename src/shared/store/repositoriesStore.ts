@@ -1,5 +1,6 @@
 import { makeAutoObservable, runInAction } from "mobx";
 import { throttle } from "../helpers/throttle";
+import { debounce } from "@shared/helpers/debounce";
 
 export type RepositoryType = {
   id: number;
@@ -19,9 +20,9 @@ class Repositories {
   favRepositories: RepositoryType[] = [];
   constructor() {
     makeAutoObservable(this);
-    this.getSearchRepositories = throttle(
+    this.getSearchRepositories = debounce(
       this.getSearchRepositories.bind(this),
-      1000
+      300
     );
   }
 
