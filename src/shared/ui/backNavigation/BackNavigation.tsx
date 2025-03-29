@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import styles from "./Repository.module.css";
+import styles from "./Back.module.css";
 
 export const BackNavigation = () => {
   return (

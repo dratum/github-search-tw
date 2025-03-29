@@ -1,16 +1,13 @@
 import { observer } from "mobx-react-lite";
-import { NavLink } from "react-router-dom";
 import styles from "./Favorites.module.css";
 import { RepoCard, DropDown } from "@shared/ui/index";
 import repositoriesStore from "@shared/store/repositoriesStore";
+import { BackNavigation } from "@shared/ui/backNavigation/BackNavigation";
 
 export const FavoritesPage = observer(() => {
   return (
     <main>
-      <NavLink to={"/"}>
-        <img src='/Union.svg' alt='' />
-        <span className={styles.back}>Back</span>
-      </NavLink>
+      <BackNavigation/>
       <div className={styles.headers}>
         <h2>
           Favorites: {repositoriesStore.favRepositories.length} repositories

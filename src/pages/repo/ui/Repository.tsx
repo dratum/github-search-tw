@@ -3,7 +3,7 @@ import styles from "./Repository.module.css";
 import repositoriesStore, { RepositoryType } from "@shared/store/repositoriesStore";
 import { useParams } from "react-router-dom";
 import { useRepoActions } from "@shared/hooks/useRepoActions";
-import { BackNavigation } from "./BackNavigation";
+import { BackNavigation } from "@shared/ui/backNavigation/BackNavigation";
 import { RepositoryProfile } from "./RepositoryProfile";
 import { RepositoryMetadata } from "./RepositoryMetadata";
 import { RepositoryActions } from "./RepositoryActions";

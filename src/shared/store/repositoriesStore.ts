@@ -1,5 +1,4 @@
 import { makeAutoObservable, runInAction } from "mobx";
-import { throttle } from "../helpers/throttle";
 import { debounce } from "@shared/helpers/debounce";
 
 export type RepositoryType = {
