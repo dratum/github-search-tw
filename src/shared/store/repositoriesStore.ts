@@ -11,6 +11,7 @@ export type RepositoryType = {
   forks: number;
   html_url: string;
   full_name: string;
+  description: string;
 };
 
 class Repositories {
